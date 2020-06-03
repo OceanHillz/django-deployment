@@ -25,7 +25,7 @@ SECRET_KEY = '3mgpzl^q&3m-760bc^k3at#h77+aow7(lxo%0otukl*4t7j7um'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [0.0.0.0]
+ALLOWED_HOSTS = ['oceanhillz.pythonanywhere.com']
 
 
 # Application definition
