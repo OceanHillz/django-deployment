@@ -1,0 +1,43 @@
+{% extends 'Authentication/base.html' %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+{% block content %}
+<style>
+  img{
+    border-radius: 150px;
+  }
+  body{
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F05%2Fblue-sky-new-york-city-WHYBLUESKY0517.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+<div class="text-center">
+  <h1>Register</h1>
+  <h4><em>...Find happiness and laughter with TeslohgTV...</em></h4>
+</div>
+<div class="row">
+  <div class="col-auto">
+    <div class="card text-center bg-dark">
+  <div class="card-header text-light bg-dark">
+    <h2>TeslohgTV</h2>
+  </div>
+  <div class="card-body">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="card-footer text-muted">
+        <input type="submit" class="btn btn-primary" name="" value="Register">
+      </div>
+    </form>
+  </div>
+</div>
+  </div>
+    <div class="col-3 ml-auto"><img src="https://www.bmwusa.com/content/dam/bmwusa/fma/new-secondary-fmas-assets/non-cookied/secondary-fma-3/BMW-HP-5Series-Secondary-FMA-Mobile.jpg" alt="" width="300" height="300"></div>
+    <div class="col-3 ml-auto"><img src="" alt="" width="300" height="300"></div>
+</div>
+
+{% endblock content %}
